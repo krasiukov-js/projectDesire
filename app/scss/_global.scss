@@ -33,6 +33,12 @@ body {
   padding: 0 15px;
 }
 
+.container-fluid {
+	width: 1900px;
+	margin: 0 auto;
+  	padding: 0 15px;
+}
+
 .slick-dots {
 	display: flex;
 	justify-content: center;
@@ -52,7 +58,7 @@ body {
 	li.slick-active {
 		button {
 			background-color: #FFEF35;
-			border: none;
+			outline: none;
 		}
 	}
 }
