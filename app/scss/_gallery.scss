@@ -1,0 +1,42 @@
+.gallery {
+    padding: 82px 0 88px;
+    &__buttons {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        margin: 0 13px;
+        background-color: transparent;
+        border: 1px solid #454647;
+        border-radius: 20px;
+        padding: 6px 16px;
+        font-size: 14px;
+        color: #8F8D8D;
+        font-weight: 600;
+        cursor: pointer;
+        outline: none;
+    }
+    .mixitup-control-active {
+        background: #FFEF35;
+        color: $title;
+        border-color: #FFEF35;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px 34px;
+    }
+    &__item:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 1148px;
+        height: 100%;
+    }
+}
