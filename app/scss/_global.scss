@@ -63,6 +63,27 @@ body {
 	}
 }
 
+.breadcrumbs {
+	background: rgba(#DFDFDF, .5);
+	padding: 13px 0 14px 0;
+	&__list {
+		display: flex;
+	}
+
+	&__item::after {
+		content: '/';
+		margin-left: -4px;
+		margin-right: 4px;
+	}
+	&__item:last-child::after {
+		display: none;
+		
+	}
+	&__link {
+		font-style: 14px;
+		color: $default;
+	}
+}
 
 
 
