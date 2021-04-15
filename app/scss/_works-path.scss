@@ -1,0 +1,73 @@
+.works-path {
+    padding: 79px 0 26px;
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 51px;
+        color: $title;
+        @extend %title-font;
+        margin-bottom: 39px;
+
+
+    }
+    &__items-box {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 2px solid rgba($title, .7);
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $title;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 0;
+            bottom: -5px;
+        }
+    }
+    &__item {
+        width: 268px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+    &__item--production {
+        margin-left: 317px;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 20px;
+            width: 2px;
+            background-color: rgba($title, .7);
+        }
+    }
+    &__item--production,
+    &__item--consultation {
+        padding-bottom: 38px;
+    }
+    &__item--measurements {
+        margin-left: 306px;
+        padding-top: 38px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0;
+            height: 20px;
+            width: 2px;
+            background-color: rgba($title, .7);
+        }
+    }
+    &__item-title {
+        margin-left: 10px;
+        color: $title;
+        @extend %title-font;
+    }
+    &__title-descr {
+        margin-top: 13px;
+    }
+}
